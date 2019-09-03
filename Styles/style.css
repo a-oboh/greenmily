@@ -25,20 +25,19 @@ nav .navbar-collapse .navbar-nav li a {
 /* Hero Image */
 .hero-image {
     background-image: url("../img/mily-bg.png");
-    height: 60%;
     width: 100%;
     min-width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    padding-top: 63px;
+    padding-bottom: 50px;
 }
 
 .hero-text h2:first-child {
     text-align: left;
-    position: absolute;
-    bottom: 160px;
-    right: 600px;
+    margin-top: 120px;
+    margin-left: 60px; 
     width: 531px;
     height: 88px;
     font-family: 'Montserrat', sans-serif;
@@ -51,10 +50,8 @@ nav .navbar-collapse .navbar-nav li a {
 
 .hero-text p {
     text-align: left;
-    position: absolute;
-    top: 210px;
-    margin-left: 14px;
-    /* right: 600px; */
+    margin-top: 20px;
+    margin-left: 60px;
     width: 531px;
     height: 88px;
     font-family: 'Montserrat', sans-serif;
@@ -66,15 +63,12 @@ nav .navbar-collapse .navbar-nav li a {
 }
 
 .store-btn {
-    position: absolute;
-    top: 286px;
-    left: 13px;
+    margin-top: 10px;
+    margin-left: 60px;
 }
 
 /* How section */
 .how-section {
-    position: relative;
-    top: 353px;
     width: 100%;
 }
 
@@ -82,26 +76,25 @@ nav .navbar-collapse .navbar-nav li a {
     background: #E6EFD4;
     width: 100%;
     height: 80px;
-    margin-top: 20px;
+    margin: 0;
 }
 
 .how-section-header h1 {
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
     line-height: 44px;
     padding-top: 15px;
     text-align: center;
     color: #008A4A;
+    margin: 0;
 }
 
 /* first section */
 
 .how-div-1 {
-    padding-top: 40px;
-    padding-left: 70px;
-    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-left: 47px;
 }
 
 .how-div-1 h2 {
@@ -124,10 +117,13 @@ nav .navbar-collapse .navbar-nav li a {
     color: #9CC054;
 }
 
+
+.how-div-1 div:nth-child(2) {
+    width: 320px;
+    height: 305px;
+}
+
 .how-div-1 img {
-    position: absolute;
-    left: 65%;
-    top: 130px;
     width: 320px;
     height: 305px;
 }
@@ -135,22 +131,22 @@ nav .navbar-collapse .navbar-nav li a {
 /* second section */
 
 .how-div-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 90px;
-    padding-left: 70px;
     width: 100%;
 }
 
+.how-div-2 div:nth-child(2) {
+    /* padding-left: 34%; */
+}
+
 .how-div-2 h2 {
-    padding-top: 7%;
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
     line-height: 44px;
     color: #008A4A;
-    position: absolute;
-    left: 62%;
-    top: 500px;
+    padding-right: 20px;
 }
 
 .how-div-2 img {
@@ -163,6 +159,9 @@ nav .navbar-collapse .navbar-nav li a {
 /* third section */
 
 .how-div-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 90px;
     padding-left: 70px;
     width: 100%;
@@ -181,54 +180,54 @@ nav .navbar-collapse .navbar-nav li a {
 
 .how-div-3 p {
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 29px;
     max-width: 300px;
     color: #9CC054;
 }
 
-.how-div-3 img {
-    position: absolute;
-    left: 65%;
-    top: 800px;
-    width: 300px;
+.how-div-3 div:nth-child(2) {
+    width: 320px;
     height: 310px;
+}
+
+.how-div-3 img {
+    width: 300px;
+    height: 320px;
 }
 
 /* fourth section */
 
 .how-div-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 90px;
     padding-left: 70px;
-    width: 100%;
 }
 
 .how-div-4 h2 {
-    padding-top: 7%;
+    /* padding-top: 7%; */
     font-family: Montserrat;
+    max-width: 500px;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 44px;
     color: #008A4A;
-    position: absolute;
-    left: 62%;
-    top: 1200px;
+    
+}
+
+.how-div-4 div:nth-child(2) {
+    padding-left: 20px;
 }
 
 .how-div-4 p {
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 29px;
     max-width: 300px;
     color: #9CC054;
-    position: absolute;
-    left: 62%;
-    top: 1400px;
 }
 
 .how-div-4 img {
@@ -241,15 +240,13 @@ nav .navbar-collapse .navbar-nav li a {
 /* farmers section */
 
 .farmers-section {
-    position: relative;
-    top: 423px;
-    width: 100%;
+    padding-top: 90px;
 }
 
 .farmers-div-1 {
-    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
     padding-left: 70px;
-    width: 100%;
 }
 
 .farmers-div-1 h2 {
@@ -287,21 +284,16 @@ nav .navbar-collapse .navbar-nav li a {
 }
 
 .farmers-div-1 img {
-    position: absolute;
-    left: 65%;
-    top: 130px;
     width: 320px;
     height: 305px;
 }
 
 /* store buttons */
 .store-header {
-    /* background: #E6EFD4; */
+    padding-top: 70px;
+    padding-bottom: 8%;
     width: 100%;
     height: 130px;
-    margin-top: 20px;
-    position: relative;
-    top: 473px;
 }
 
 .store-header img {
@@ -309,16 +301,19 @@ nav .navbar-collapse .navbar-nav li a {
 }
 
 .store-header div {
-    margin-left: 470px;
+    background: #E6EFD4;
+    padding-bottom: 29px;
+    display: flex;
+    justify-content: center;
 }
 
 /* footer */
 
 .footer {
-    position: absolute;
-    top: 2650px;
-    width: 100%;
-    height: 320px;
+    /* display: flex;
+    justify-content: end;
+    align-items: center; */
+    height: 370px;
     background: #1b1b1b;
 }
 
@@ -329,14 +324,12 @@ nav .navbar-collapse .navbar-nav li a {
 
 .foot-about p {
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     max-width: 450px;
     width: 400px;
     color: #FFFFFF;
-    /* padding-left: 10px; */
+    padding-left: 10px;
     padding-top: 20px;
 }
 
@@ -346,9 +339,7 @@ nav .navbar-collapse .navbar-nav li a {
 }
 
 .foot-company {
-    position: relative;
-    bottom: 140px;
-    left: 50%;
+    
 }
 
 .foot-company p {
@@ -378,9 +369,7 @@ nav .navbar-collapse .navbar-nav li a {
 }
 
 .foot-legal {
-    position: relative;
-    bottom: 265px;
-    left: 65%;
+    
 }
 
 .foot-legal p {
@@ -409,58 +398,6 @@ nav .navbar-collapse .navbar-nav li a {
     color: #FFFFFF;
 }
 
-
-
-
-
-
-
-
-@media all and (max-width: 992px) {
-
-    /* store buttons */
-    .store-header {
-        margin-top: 20px;
-        position: relative;
-        top: 703px;
-    }
-
-    .store-header img {
-        margin-top: 40px;
-    }
-
-    .store-header div {
-        margin-left: 200px;
-    }
-
-    .hero-text h2:first-child {
-        position: absolute;
-        left: 15px;
-        bottom: 193px;
-        max-width: 470px;
-        max-height: 62px;
-        /* font-size: 36px; */
-        /* line-height: 44px; */
-    }
-
-    .hero-text p {
-        position: relative;
-        top: 200px;
-        left: 15px;
-        /* right: 600px; */
-        max-width: 400px;
-        max-height: 42px;
-        font-size: 24px;
-        line-height: 29px;
-    }
-
-    .store-btn {
-        position: absolute;
-        top: 276px;
-        left: 13px;
-    }
-
-}
 
 
 
@@ -918,242 +855,6 @@ nav .navbar-collapse .navbar-nav li a {
 
 
 
-
-
-@media all and (max-width: 420px) {
-
-    /* store buttons */
-    .store-header {
-        margin-top: 20px;
-        position: relative;
-        top: 703px;
-    }
-
-    .store-header img {
-        margin-top: 40px;
-    }
-
-    .store-header div {
-        margin-left: 30px;
-    }
-
-    /* farmers section */
-    .farmers-div-1 {
-        padding-top: 40px;
-        padding-left: 70px;
-        width: 100%;
-    }
-
-    .farmers-div-1 h2 {
-
-        font-size: 25px;
-
-        max-width: 500px;
-    }
-
-    .farmers-div-1 p {
-        font-size: 15px;
-        line-height: 29px;
-    }
-
-    .farmers-div-1 button {
-        font-size: 22px;
-        line-height: 29px;
-        margin-left: 40px;
-    }
-
-    .farmers-div-1 img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin-top: 450px;
-        margin-left: 90px;
-        width: 240px;
-        height: 210px;
-    }
-
-    /* How section */
-    .how-section {
-        top: 400px;
-    }
-
-    .how-section-header {
-        height: 60px;
-    }
-
-    .how-section-header h1 {
-        font-size: 30px;
-        line-height: 40px;
-        padding-top: 9px;
-    }
-
-    /* first section */
-
-    .how-div-1 {
-        padding-top: 20px;
-        padding-left: 60px;
-        width: 80%;
-    }
-
-    .how-div-1 h2 {
-        padding-top: 0;
-        font-size: 25px;
-    }
-
-    .how-div-1 p {
-        font-size: 17px;
-        max-width: 300px;
-    }
-
-    .how-div-1 img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin-top: 230px;
-        margin-left: 90px;
-        width: 240px;
-        height: 210px;
-    }
-
-    /* second section */
-
-    .how-div-2 {
-        padding-top: 140px;
-        padding-left: 60px;
-        width: 80%;
-    }
-
-    .how-div-2 h2 {
-        padding-left: 40px;
-        font-size: 25px;
-        position: absolute;
-        left: 0;
-        top: 460px;
-        /* margin-top: 70px; */
-    }
-
-    .how-div-2 img {
-        margin-top: 180px;
-        padding-left: 40px;
-        width: 240px;
-        height: 210px;
-    }
-
-    /* third section */
-
-    .how-div-3 {
-        padding-top: 40px;
-        padding-left: 80px;
-        width: 80%;
-    }
-
-    .how-div-3 h2 {
-        max-width: 500px;
-        font-size: 25px;
-        line-height: 44px;
-    }
-
-    .how-div-3 p {
-        font-size: 15px;
-        line-height: 29px;
-    }
-
-    .how-div-3 img {
-        position: absolute;
-        left: 0;
-        top: 720px;
-        margin-top: 270px;
-        margin-left: 90px;
-        width: 220px;
-        height: 210px;
-    }
-
-    /* fourth section */
-
-    .how-div-4 {
-        padding-top: 240px;
-        padding-left: 80px;
-        width: 80%;
-    }
-
-    .how-div-4 h2 {
-        max-width: 300px;
-        font-size: 25px;
-        line-height: 44px;
-        position: absolute;
-        left: 0;
-        top: 1200px;
-        margin-top: 20px;
-        margin-left: 70px;
-    }
-
-    .how-div-4 p {
-        font-size: 15px;
-        line-height: 29px;
-        position: absolute;
-        left: 0;
-        top: 1300px;
-        margin-top: 30px;
-        margin-left: 70px;
-    }
-
-    .how-div-4 img {
-        padding-top: 30px;
-        padding-left: 0;
-        margin-top: 80px;
-        width: 320px;
-        height: 300px;
-    }
-
-    .hero-text h2:first-child {
-        position: absolute;
-        margin-left: 36px;
-        margin-top: 10px;
-        top: 80px;
-        left: 0px;
-        text-align: center;
-        max-width: 310px;
-        max-height: 40px;
-
-        font-size: 23px;
-    }
-    .hero-text p {
-        text-align: center;
-        position: relative;
-        top: 180px;
-        margin-left: 80px;
-        /* right: 600px; */
-        max-width: 200px;
-        max-height: 42px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 29px;
-    }
-
-    .store-btn {
-        position: absolute;
-        top: 300px;
-        left: 70px;
-        max-width: 400px;
-    }
-
-    .store-btn img {
-        height: 40px;
-        width: 120px;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
 @media all and (max-width: 360px) {
 
     /* store buttons */
@@ -1376,23 +1077,6 @@ nav .navbar-collapse .navbar-nav li a {
     .store-btn img {
         height: 40px;
         width: 120px;
-    }
-
-}
-
-@media all and (min-width: 995px) {
-    .hero-text h2:first-child {
-        position: absolute;
-        left: 15px;
-        text-align: left;
-        /* max-width: 400px; */
-        height: 90px;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        /* font-size: 36px; */
-        /* line-height: 44px; */
-        color: white;
     }
 
 }
